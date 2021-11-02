@@ -20,7 +20,7 @@ public class Main {
         long pages = document.getNumberOfPages();
         PDFTextStripper pdfTextStripper = new PDFTextStripper();
         String documentTxt = pdfTextStripper.getText(document);
-        FileWriter writer = new FileWriter("C:\\Users\\Sindroma\\Desktop\\TestingFileReaderWriter\\Java.txt");
+        FileWriter writer = new FileWriter("C:\\Users\\Sindroma\\Desktop\\TestingFileReaderWriter\\testing.txt");
         for(int i = 0; i<pages; i++){
             writer.write(documentTxt);
         }
